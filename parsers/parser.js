@@ -83,7 +83,7 @@ class Parser{
 
     }
     console.log(chalk.bgWhite.bold.black(this.file));
-    console.log("Total # of lines comments: " + lines);
+    console.log("Total # of lines: " + lines);
     console.log("Total # of comment lines: ", blockCommentLines + inlineCommentLines);
     console.log("Total # of single line comments: " + inlineCommentLines);
     console.log("Total # of comment lines within block comments: " + blockCommentLines);
