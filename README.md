@@ -1,8 +1,8 @@
 # c1-cli
 
-Hello! This little project is my submission for the technical assessment of Capital One's 2021 Software Engineer internship.  
+Hello! This project is my submission for the technical assessment of Capital One's 2021 Software Engineer internship.  
 
-
+![what it looks like](https://github.com/waynezhu6/c1-cli/blob/master/c1-cli.png)
 
 It's a CLI written in Node.js, which I picked because of my familiarity with the Javascript language, and because of a  
 wide selection of npm modules that made my life easier when trying to give it some visual highlights. And I figured I might as well
