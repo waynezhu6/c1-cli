@@ -4,15 +4,20 @@
 // import program from 'commander';
 // import ParserManager from './parsers/parserManager';
 const program = require('commander');
+const chalk = require('chalk');
 const ParserManager = require('./parsers/parserManager');
 
 program
   .version('0.0.1')
-  .option('-r, --read [read]', 'list of customers in CSV file')
+  .option('[file]', 'generate line count report on file')
   .parse(process.argv)
 
-let filePath = process.argv[process.argv.length - 1];
-
-let p = new ParserManager();
-console.log('----------------------------------------');
-p.parse(filePath);
+if(process.argv.length <= 2){
+  console.log(chalk.bgRed.bold("Error: no file specified. Use c1-cli-win.exe -h for help."));
+}
+else{
+  let filePath = process.argv[process.argv.length - 1];
+  let p = new ParserManager();
+  console.log('----------------------------------------');
+  p.parse(filePath);
+}
